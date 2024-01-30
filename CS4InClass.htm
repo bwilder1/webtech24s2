@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Image Maps or Hotspots</title>
+
+	<style type="text/css">
+	/* Your styles go here */
+	/* This is how I write comments in CSS */
+
+	p, h1 {text-align: center;}
+	p {border: 5px solid green;}
+	body {/*background-color: aquamarine; */
+			background-image: url(music-1.gif);
+			background-repeat: repeat;
+			background-position: center;
+			background-attachment: fixed; }
+
+	img#b {/*float: left;*/ border: 5px ridge red; width: 40%;
+			margin-left: 100px; padding: 20px; 
+			position: absolute; top: 650px; left: 250px;}
+
+	h2 {font-weight: bold; font-style: italic; color: blueviolet;
+		font-size: 4em; position: absolute; top: 515px; left: 450px;
+		z-index: 1;}
+	
+
+	</style>
+	
+	
+	
+  </head>
+
+  <body>
+	<!-- Your HTML goes here -->
+	<!-- Anything here will not be displayed
+		You can use this to take notes or make comments
+		that I can read if I want to -->
+
+		<h1> Image Hotspots or Image Maps </h1>
+
+		<map name="middlesex" id="m">
+
+			<area shape="rect" coords="301,351,330,383" href="http://www.wellesleyma.gov" alt="Wellesley Site" />
+			<area shape="rect" coords="338,314,360,373" href="http:/www.newtonma.gov" alt="Newton Site" />
+
+		</map>
+		<p>
+			<img src="Middlesex-1.gif" alt="Middlesex County Map" title="Middlesex County" usemap="#middlesex" />
+		</p>
+
+		<h2>Go Babson!!!</h2>
+		<img id="b" src="beaver-2.jpg" alt="Beaver Image" title="Babson Beavers" />
+		
+		
+
+
+	
+  </body>
+</html>
