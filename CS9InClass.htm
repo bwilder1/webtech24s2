@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>CS9 Forms Example</title>
+
+	<style>
+		h1 {font-family: Arial; color: navy; text-align: center;}
+		form {background-color: silver; font-family: Arial;
+				width: 50%; margin-right: auto; margin-left: auto;
+					color: navy;
+					padding-top: 3%; padding-bottom: 3%; padding-left: 8%;}
+
+
+	</style>
+	
+	
+	
+  </head>
+
+  <body>
+	<h1>A Simple HTML Form</h1>
+	<form method="post" action="">
+		<!--This is the text bix-->
+		<p>
+			First Name: &nbsp; &nbsp;
+			<input type="text" name="myname" size="15" maxlength="40"/> &nbsp; &nbsp; &nbsp; &nbsp;
+
+			Last Name: &nbsp; &nbsp;
+			<input type="text" name="myname" size="15" maxlength="40"/>
+		</p>
+
+		<!-- This is the dropdown box-->
+		<p> 
+			Please select the state you are from:
+			<select name="state">
+				<option value="MA">MA</option>
+				<option value="ME">ME</option>
+				<option value="NH">NH</option>
+
+		</select>
+		</p>
+
+		<!-- Building a radio button -->
+		<p>
+			Please select your gender: &nbsp; &nbsp;
+			Male: &nbsp; <input type="radio" name="gender" value="Male"/>  &nbsp; &nbsp;
+			Female: &nbsp; <input type="radio" name="gender" value="Female"/> 
+
+		</p>
+
+		<!-- This is a check box -->
+		<p>
+			Which topic in Web Tech do you like (please select all that apply): <br/>
+			<input type="checkbox" name="topic" value="html"/> HTML <br/>
+			<input type="checkbox" name="topic" value="css"/> CSS <br/>
+			<input type="checkbox" name="topic" value="javascript"/> JavaScript <br/>
+			<input type="checkbox" name="topic" value="jquery"/> jQuery
+ 
+		</p>
+
+		<!-- This is a paragraph box (large text box) -->
+		<p>
+			Please provide any additional comments you might have: <br/>
+			<textarea name="mysuggs" cols="40" rows="5"></textarea>
+		</p>
+
+		<!-- Buttons -->
+		<p>
+			<input type="submit" name="Submit" value="Go!"/> &nbsp; &nbsp;
+			<input type="reset" name="Reset" value="Oh No!"/>
+
+		</p>
+
+
+	</form>
+		
+	
+	
+  </body>
+</html>
