@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Homework 2 - Wilder - Section 2</title>
+
+	<style>
+	
+		table, td {font-family: Arial; font-size: 13px; 
+				border: solid black 2px; text-align: center;}
+		table {width: 60%; margin-left: auto; margin-right: auto;}
+		.c1 {width: 35%;}
+		.c2 {width: 25%;}
+		p {text-align: center; height: 30px;}
+		.b1 {background-color: green;}
+		.b2 {background-color: yellow;}
+		img {width: 45%;}
+		caption {font-family: Lucida Grande; font-size: 2em; color: navy; font-weight: bold;
+					margin-bottom: 20px;}
+		form {background: url(brick.gif); margin: 40px 200px; padding-bottom: 40px; padding-top: 40px;}
+		.c24 {width: 20%;}
+
+
+	</style>
+	
+	<script>
+	
+	  
+	</script>
+  </head>
+
+  <body>
+	
+	<form method="post" action="">
+		<table>
+			<caption>Catalog of Sweaters</caption>
+			<tr>
+                <td class="c1">Product Image</td>
+                <td class="c24">Product Price</td>
+                <td class="c3">Product Selection</td>
+				<td class="c24">Product Quantity</td>
+            </tr>
+            <tr>
+                <td class="c1"><img src="redsweater.jpg" alt="Red Sweater" title="Red Sweater"></td>
+                <td class="c24">$35.00</td>
+                <td class="c3"> <input type="radio" name="sweater" value="redsweater"/> Red Sweater</td>
+				<td class="c24">Quantity: <input type="text" name="quantity" size="7" maxlength="3"/></td>
+            </tr>
+            <tr>
+                <td class="c1"><img src="bluesweater.jpg" alt="Blue Sweater" title="Blue Sweater"></td>
+                <td class="c24">$45.00</td>
+                <td class="c3"> <input type="radio" name="sweater" value="bluesweater"/> Blue Sweater</td>
+				<td class="c24">Quantity: <input type="text" name="quantity" size="7" maxlength="3"/></td>
+            </tr>
+            <tr>
+                <td class="c1"><img src="whitesweater.jpg" alt="White Sweater" title="White Sweater"></td>
+                <td class="c24">$30.00</td>
+                <td class="c3"> <input type="radio" name="sweater" value="whitesweater"/> White Sweater </td>
+				<td class="c24">Quantity: <input type="text" name="quantity" size="7" maxlength="3"/></td>
+            </tr>
+
+		</table>
+	<p>
+		<input class="b1" type="submit" name="Submit" value="Submit Selections"/> &nbsp; &nbsp;
+		<input class="b2" type="reset" name="Reset" value="Clear Selections"/>
+
+	</p>
+
+	</form>
+
+	
+	
+  </body>
+</html>
