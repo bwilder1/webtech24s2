@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Get In Touch With Me</title>
+	<link rel="stylesheet" href="TopNavSS.css" type="text/css"/>
+
+	<style>
+	
+	</style>
+	
+	<script>
+		function myFunction() {
+			var x = document.getElementById("mytopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+	
+	
+  </head>
+
+  <body>
+	<div id="banner">
+		<h1 id="heading"> Contact </h1>
+	</div>
+	<div class="topnav" id="mytopnav">
+		<a href="index.htm">Home</a>
+		<a href="AboutMe.htm">About</a>
+		<div class="drpdwn">
+			<button class="drpbtn">Pepes Pizzeria</button>
+			<div class="drpdwncontent">
+				<a href="PepesAbout.htm">About</a>
+				<a href="PepesReview.htm">Review</a>
+			</div>
+		</div>
+		<div class="drpdwn">
+			<button class="drpbtn">Pinos Pizza</button>
+			<div class="drpdwncontent">
+				<a href="PinosAbout.htm">About</a>
+				<a href="PinosReview.htm">Review</a>
+			</div>
+		</div>
+		<div class="drpdwn">
+			<button class="drpbtn">Jinnys Pizzeria</button>
+			<div class="drpdwncontent">
+				<a href="JinnysAbout.htm">About</a>
+				<a href="JinnysReview.htm">Review</a>
+			</div>
+		</div>
+		<div class="drpdwn">
+			<button class="drpbtn">Oath Pizza</button>
+			<div class="drpdwncontent">
+				<a href="OathAbout.htm">About</a>
+				<a href="OathReview.htm">Review</a>
+			</div>
+		</div>
+		<a href="Contact.htm" class="active">Contact</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+	<h1>Contact Me!</h1>
+	<hr>
+
+	<h3>Any questions or comments for me? Feel free to reach out!</h3>
+	
+	
+	<form method="post" action="">
+		
+		<p>
+			First Name: &nbsp; &nbsp;
+			<input type="text" name="myname" size="15" maxlength="40"/> &nbsp; &nbsp; &nbsp; &nbsp;
+
+			Last Name: &nbsp; &nbsp;
+			<input type="text" name="myname" size="15" maxlength="40"/>
+		</p>
+
+		<p>
+			Email: <input type="text" name="Email" size="23" maxlength="60"/>
+		</p>
+
+
+		<p> 
+			Please select your favorite pizza topping:
+			<select name="topping">
+				<option value="Pepperoni">Pepperoni</option>
+				<option value="Sausage">Sausage</option>
+				<option value="Vegetable">Vegies</option>
+				<option value="Meatballs">Meatballs</option>
+				<option value="4Cheese">Four Cheese</option>
+				<option value="Other">Other</option>
+
+		</select>
+		</p>
+
+		
+		<p>
+			Do you feel better educated about pizza in the area? &nbsp; &nbsp;
+			Yes: &nbsp; <input type="radio" name="gender" value="Male"/>  &nbsp; &nbsp;
+			No: &nbsp; <input type="radio" name="gender" value="Female"/> 
+
+		</p>
+
+		
+		<p>
+			Please provide any questions/comments you might have: <br/>
+			<textarea name="mysuggs" cols="40" rows="5"></textarea>
+		</p>
+
+	
+		<p>
+			<input type="submit" name="Submit" value="Submit"/> &nbsp; &nbsp;
+			<input type="reset" name="Reset" value="Reset"/>
+
+		</p>
+
+
+	</form>
+		
+	
+	
+  </body>
+</html>

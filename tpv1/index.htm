@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>The Finest Pizzerias</title>
+	<link rel="stylesheet" href="TopNavSS.css" type="text/css"/>
+
+	<style>
+	ul {list-style-image: url(Pizzabullet.gif);}
+
+	/* I need help making the video fit the width of the page. I looked around the internet to see
+		but couldn't find anything helpful. I was wondering if you knew how to fix it. I was planning
+		on meeting you next week to discuss this and some other things but wanted to give you a heads up. */
+	#myvideo {
+		position:absolute;
+		margin-bottom: 0%;
+		z-index: 1;
+		min-width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	</style>
+	
+	<script type="text/javascript">
+
+		function myFunction() {
+			var x = document.getElementById("mytopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+
+
+	</script>
+	
+  </head>
+ 
+  <body>
+	<video width="100%" height="400" autoplay muted controls loop id="myvid">
+		<source src="Pizzavid.mp4" type="video/mp4" />
+	</video>
+		
+	<div class="topnav" id="mytopnav">
+		<a href="index.htm" class="active">Home</a>
+		<a href="AboutMe.htm">About</a>
+		<div class="drpdwn">
+			<button class="drpbtn">Pepes Pizzeria</button>
+			<div class="drpdwncontent">
+				<a href="PepesAbout.htm">About</a>
+				<a href="PepesReview.htm">Review</a>
+			</div>
+		</div>
+		<div class="drpdwn">
+			<button class="drpbtn">Pinos Pizza</button>
+			<div class="drpdwncontent">
+				<a href="PinosAbout.htm">About</a>
+				<a href="PinosReview.htm">Review</a>
+			</div>
+		</div>
+		<div class="drpdwn">
+			<button class="drpbtn">Jinnys Pizzeria</button>
+			<div class="drpdwncontent">
+				<a href="JinnysAbout.htm">About</a>
+				<a href="JinnysReview.htm">Review</a>
+			</div>
+		</div>
+		<div class="drpdwn">
+			<button class="drpbtn">Oath Pizza</button>
+			<div class="drpdwncontent">
+				<a href="OathAbout.htm">About</a>
+				<a href="OathReview.htm">Review</a>
+			</div>
+		</div>
+		<a href="Contact.htm">Contact</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+	<h1> Welcome To My Website!</h1>
+	<h4> Take a look around! Feel free to contact me with any suggestions or questions.</h4>
+
+	<h3> What Can You Expect From This Site?</h3>
+	<ul>
+		<li> Frank Pepe's Pizzeria Napoletan
+			<ol>				
+				<li>About</li>
+				<li>Favorite Slice with rating</li>
+			</ol>
+		</li>
+		<li>Pinos Pizza
+			<ol>
+				<li>About</li>
+				<li>Favorite Slice with rating</li>
+			</ol>
+
+		</li>
+		<li>Jinny's Pizzeria
+			<ol>
+				<li>About</li>
+				<li>Favorite Slice with rating</li>
+			</ol>
+
+		</li>
+		<li>Oath Pizza
+			<ol>
+				<li>About</li>
+				<li>Favorite Slice with rating</li>
+			</ol>
+		</li>
+	</ul>
+
+	<h3> Where Can I Find these Delicious Spots? (Click on the spots on the map to be directed to their website!)</h3>
+	<map name="chestnuthill" id="c">
+
+		<area shape="rect" coords="47,156,107,186" href="https://www.jinnyspizza.com" alt="Jinny's Pizzeria" />
+		<area shape="rect" coords="269,426,323,454" href="https://www.oathpizza.com" alt="Oath Pizza" />
+		<area shape="rect" coords="254,312,319,336" href="https://pepespizzeria.com/store/frank-pepes-chestnut-hill" alt="Pepe's Pizzeria" />
+		<area shape="rect" coords="619,63,675,88" href="https://pinospizza.com" alt="Pinos Pizza" />
+
+	</map>
+	<p>
+		<img src="Pizzamap.png" alt="chestnuthill Pizza Locator" title="Chestnuthill Map" usemap="#chestnuthill"/>
+	</p>
+
+	<audio autoplay loop>
+		<source src="Intromusic.mp3" type="audio/mp3" />
+	</audio>
+  </body>
+</html>
