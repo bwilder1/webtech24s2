@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homework 3 - Chat GPT Version</title>
+
+<script>
+    function calculateAmount() {
+      var productNameInput = document.getElementById('productName');
+      var quantityInput = document.getElementById('quantity');
+      var amountOwedInput = document.getElementById('amountOwed');
+
+      var productName = productNameInput.value.trim().toLowerCase();
+      var quantity = parseFloat(quantityInput.value);
+
+      var costPerUnit = 0;
+      var productCost = 0;
+
+      // Check if product name is valid
+      if (productName === 'milk') {
+        costPerUnit = 3.50;
+      } else if (productName === 'apple') {
+        costPerUnit = 0.99;
+      } else if (productName === 'fish') {
+        costPerUnit = 5.99;
+      } else {
+        alert('Invalid product name. Please enter Milk, Apple, or Fish.');
+        return;
+      }
+
+      // Check if quantity is valid
+      if (isNaN(quantity) || quantity <= 0) {
+        alert('Quantity must be a valid numeric value greater than zero.');
+        return;
+      }
+
+      // Calculate amount owed
+      productCost = costPerUnit * quantity;
+      amountOwedInput.value = '$' + productCost.toFixed(2);
+    }
+  </script>
+
+</head>
+
+<body>
+  <form id="productForm">
+    <label for="productName">Product Name:</label>
+    <input type="text" id="productName" name="productName" required><br><br>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" required><br><br>
+
+    <label for="amountOwed">Amount Owed:</label>
+    <input type="text" id="amountOwed" name="amountOwed" readonly><br><br>
+
+    <button type="button" onclick="calculateAmount()">Calculate Amount</button>
+  </form>
+
+</body>
+
+<h2> Chat GPT Solution </h2>
+<p>
+	I prompted it by saying "When considering HTML and Javascript, please complete the following task:"
+	followed by the directions given in the html file. What I noticed with the chat GPT version is a few things.
+	First, it assigns each food with a variable that is assigned to the document.getelemendID for the input. 
+	It then creates a variable for cost per unit and assigns it value based on the food that is inputted, which
+	I find to be a more efficient approach. It only took one iteration to do this and it works correctly, it just
+	isn't styled the same. 
+</p>
+
+
+</html>
