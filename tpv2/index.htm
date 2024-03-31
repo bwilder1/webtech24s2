@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<meta name="description" content="The home page for Ben Wilder's reviews on different pizzerias in the Brookline/Newton Area." />
+	<meta name="keywords" content="Frank Pepes, Pinos Pizza, Jinnys Pizzeria, Oath Pizza, Goal, Contact, About, Brookline, Newton, Pizzeria" />
+	<title>Home Page for Reviews on The Finest Pizzerias</title>
+	<link rel="stylesheet" href="TopNavSS.css" type="text/css"/>
+	<link rel="stylesheet" href="PageLayout.css" type="text/css"/>
+
+	<style>
+	ul {list-style-image: url(Pizzabullet.gif);}
+	p#map {margin-left: 10%; margin-right: 5%;}
+
+
+	</style>
+	
+	<script type="text/javascript">
+
+		function myFunction() {
+			var x = document.getElementById("mytopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+
+
+	</script>
+	
+  </head>
+ 
+  <body>
+	<div id="banner">
+		<h1 id="heading"> My Favorite Pizzerias </h1>
+	</div>
+	<div class="topnav" id="mytopnav">
+		<a href="index.htm" class="active">Home</a>
+		<a href="AboutMe.htm">About</a>
+		<div class="drpdwn">
+			<button class="drpbtn">Pepes Pizzeria</button>
+			<div class="drpdwncontent">
+				<a href="PepesAbout.htm">About</a>
+				<a href="PepesReview.htm">Review</a>
+			</div>
+		</div>
+		<div class="drpdwn">
+			<button class="drpbtn">Pinos Pizza</button>
+			<div class="drpdwncontent">
+				<a href="PinosAbout.htm">About</a>
+				<a href="PinosReview.htm">Review</a>
+			</div>
+		</div>
+		<div class="drpdwn">
+			<button class="drpbtn">Jinnys Pizzeria</button>
+			<div class="drpdwncontent">
+				<a href="JinnysAbout.htm">About</a>
+				<a href="JinnysReview.htm">Review</a>
+			</div>
+		</div>
+		<div class="drpdwn">
+			<button class="drpbtn">Oath Pizza</button>
+			<div class="drpdwncontent">
+				<a href="OathAbout.htm">About</a>
+				<a href="OathReview.htm">Review</a>
+			</div>
+		</div>
+		<a href="Contact.htm">Contact</a>
+		<a href="Credits.htm">Credits</a>
+		<a href="SiteMap.htm">Site Map</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+	<div id="layout">
+
+	<h1> Welcome To My Website!</h1>
+	<h4> Take a look around! Feel free to contact me with any suggestions or questions.</h4>
+
+	<br/>
+
+	<h3> My Goal</h3>
+	<p>
+		My goal of this website is to introduce those within the Brookline/Newton area of some of the mouth-watering
+		pizza options nearby! I grew up going to these places so I promise you will enjoy them. I hope that those
+		who view this website will end up going to eat at and support these businesses. Their pizzas changed my life,
+		and I'm hoping they do the same for you!
+	</p>
+	<h3> What's Included? </h3>
+	<ul>
+		<li> Frank Pepe's Pizzeria Napoletan
+			<ol>				
+				<li>About</li>
+				<li>Favorite Slice with rating</li>
+			</ol>
+		</li>
+		<li>Pinos Pizza
+			<ol>
+				<li>About</li>
+				<li>Favorite Slice with rating</li>
+			</ol>
+
+		</li>
+		<li>Jinny's Pizzeria
+			<ol>
+				<li>About</li>
+				<li>Favorite Slice with rating</li>
+			</ol>
+
+		</li>
+		<li>Oath Pizza
+			<ol>
+				<li>About</li>
+				<li>Favorite Slice with rating</li>
+			</ol>
+		</li>
+	</ul>
+
+	<h3> Where Can I Find these Delicious Spots? (Click the Pizzerias on the map to be directed to their website!)</h3>
+	<map name="chestnuthill" id="c">
+
+		<area shape="rect" coords="47,156,107,186" href="https://www.jinnyspizza.com" alt="Jinny's Pizzeria" />
+		<area shape="rect" coords="269,426,323,454" href="https://www.oathpizza.com" alt="Oath Pizza" />
+		<area shape="rect" coords="254,312,319,336" href="https://pepespizzeria.com/store/frank-pepes-chestnut-hill" alt="Pepe's Pizzeria" />
+		<area shape="rect" coords="619,63,675,88" href="https://pinospizza.com" alt="Pinos Pizza" />
+
+	</map>
+	<p id="map">
+		<img src="Pizzamap.png" alt="chestnuthill Pizza Locator" title="Chestnuthill Map" usemap="#chestnuthill"/>
+	</p>
+
+
+	</div>
+
+	<audio autoplay loop>
+		<source src="Intromusic.mp3" type="audio/mp3" />
+	</audio>
+  </body>
+</html>

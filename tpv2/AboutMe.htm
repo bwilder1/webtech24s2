@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<meta name="description" content="Talking about who Ben Wilder is. About me page with details on my life and love for pizza." />
+	<meta name="keywords" content="About, Ben Wilder, Pizza, Pizzeria, Dogs, Babson College, Newton, Gann Academy, Rashi School, Pizza Connoisseur" />
+	<title>About Ben Wilder</title>
+	<link rel="stylesheet" href="TopNavSS.css" type="text/css"/>
+	<link rel="stylesheet" href="PageLayout.css" type="text/css"/>
+
+	<style>
+
+		table, td {border: 2px solid black}
+		caption {font-size: 60px; font-weight: bold; font-family: Gill Sans;}
+		table {width: 85%; margin-right: auto; margin-left: auto;}
+		img#clem {float: left; padding-right: 1%;}
+		caption#aboutcap {font-family: Georgia; text-align: center; color: rgb(204, 143, 29);}
+	</style>
+	
+	<script>
+		function myFunction() {
+			var x = document.getElementById("mytopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+	
+  </head>
+
+  <body>
+	<div id="banner">
+		<h1 id="heading"> About Me! </h1>
+	</div>
+	<div class="topnav" id="mytopnav">
+		<a href="index.htm">Home</a>
+		<a href="AboutMe.htm" class="active">About</a>
+		<div class="drpdwn">
+			<button class="drpbtn">Pepes Pizzeria</button>
+			<div class="drpdwncontent">
+				<a href="PepesAbout.htm">About</a>
+				<a href="PepesReview.htm">Review</a>
+			</div>
+		</div>
+		<div class="drpdwn">
+			<button class="drpbtn">Pinos Pizza</button>
+			<div class="drpdwncontent">
+				<a href="PinosAbout.htm">About</a>
+				<a href="PinosReview.htm">Review</a>
+			</div>
+		</div>
+		<div class="drpdwn">
+			<button class="drpbtn">Jinnys Pizzeria</button>
+			<div class="drpdwncontent">
+				<a href="JinnysAbout.htm">About</a>
+				<a href="JinnysReview.htm">Review</a>
+			</div>
+		</div>
+		<div class="drpdwn">
+			<button class="drpbtn">Oath Pizza</button>
+			<div class="drpdwncontent">
+				<a href="OathAbout.htm">About</a>
+				<a href="OathReview.htm">Review</a>
+			</div>
+		</div>
+		<a href="Contact.htm">Contact</a>
+		<a href="Credits.htm">Credits</a>
+		<a href="SiteMap.htm">Site Map</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+	<div id="layout">
+	<table>
+		<caption id="aboutcap">Who is Ben Wilder?</caption>
+		<tr>
+			<td><span style="font-weight: bold; font-size: 25px; color: rgb(204, 143, 29);">About Me:</span> My name is Ben Wilder, I was raised in Newton, Massachusetts with my loving parents and two younger siblings.
+				I also have two cute yet crazy dogs, Gordon and Clementine, that my family adopted a few years ago.
+				I went to the Rashi School for middle/elementary then Gann Academy for high school and am currently
+				a Junior at Babson pursuing my BSBA with a concentration in real estate. I grew up playing tennis and golf 
+				which I still play today, however I've taken a higher liking to golf lately. </td>
+			<td rowspan="3"><img src="Myphoto.jpg" alt="Pic of Ben" title="Pizza Connoisseur" width="290"></td>
+		</tr>
+		<tr>
+			<td>
+				<img id="clem" src="Clemmy.jpg" alt="Ben and Dog" title="My cute dog" width="200">
+				This is my cute dog Clementine. She's a pitbull that my family adopted in 2023. She's two
+				years old and has a mild food addiction, but who doesn't. My mom yelled at me when I let her
+				try my slice of pepperoni pizza from Pepes, but she deserved it.
+			</td>
+		</tr>
+		<tr>
+			<td><span style="font-weight: bold; font-size: 25px; color: rgb(204, 143, 29);">My Love For Pizza:</span> Some of you may be wondering how crazy I have to be to make a web page on pizza... Well I am.
+				I love pizza, and would even consider myself to be a pizza connoisseur. I made this site to 
+				help inform people looking for good pizza spots but specifically in the brookline/newton area.
+				My hope is that those of you who view the site will then go try those spots and create you own opinion.
+				Although we might not agree on toppings, style, or brand, I'm confident that we can agree on loving pizza.</td>
+		</tr>
+	</div>
+		
+
+
+	</table> 
+
+	
+	
+	
+  </body>
+</html>
