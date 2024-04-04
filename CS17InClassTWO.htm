@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title></title>
+
+	<style>
+	/* Your styles go here */
+    h1, h2 {font-family:Cursive; color:Navy; text-align:center;}    
+    form {background-color:aquamarine; color:black; font-family:Arial;
+              padding-left:5%; padding-top:1%; padding-bottom:1%;
+            width:40%; margin:5% auto;}
+        input[type="submit"], input[type="reset"] {height:30px; background-color:yellow;}
+        ol {font-size:1em; font-weight:bold; color: red}
+	
+	</style>
+	<script type="text/javascript">
+
+      /* Euro to dollar simple converter
+      function showResult()
+      {
+        event.preventDefault();
+        var myf, myeuro;
+        myf = document.getElementById("frm");
+        myeuro = myf.euro.value;
+
+        if (myeuro == "")
+        {
+          alert("Please enter a value into Euro section");
+        }
+        else if (isNaN(myeuro) == true)
+        {
+          alert("Please enter NUMERICAL values ONLY into Euro section");
+        }
+        else 
+        {
+          myf.dollar.value = 1.09 * parseFloat(myeuro);
+        }
+
+
+      }*/
+
+      function showResult2()
+      {
+        
+        var myf, myeuro, mydollar;
+        myf = document.getElementById("frm");
+        myeuro = myf.euro.value;
+        mydollar = myf.dollar.value;
+
+        if ((myeuro == "") && (mydollar == ""))
+        {
+          alert("You can't leave both fields blank");
+        }
+        else if ((myeuro != "") && (mydollar != ""))
+        {
+          alert("Please fill only ONE field");
+        }
+        else
+        {
+                  if (myeuro != "")
+                  {
+                    if (isNaN(myeuro) == true)
+                    {
+                      alert ("Please enter NUMERICAL value ONLY");
+                    }
+                    else
+                    {
+                      event.preventDefault();
+                      myf.dollar.value = parseFloat(myeuro) * 1.09;
+                    }
+                  }
+                  else
+                  {
+                    if(isNaN(mydollar) == true)
+                    {
+                      alert("Please enter a numerical value only");
+                    }
+                    else
+                    {
+                      event.preventDefault();
+                      myf.euro.value = parseFloat(mydollar) / 1.09;
+                    }
+                  }
+          
+        }
+
+
+      }
+      
+
+	</script>
+	
+	
+  </head>
+
+  <body>
+	<!-- Your HTML goes here -->
+	<h1> Dollar/Euro or Euro/Dollar Converter</h1>
+	<form id="frm" action="" method="POST">
+        <p>
+            Euro Value: <input type="text" name="euro" size="10" placeholder="Euro Here"/>
+        </p>
+        <p>
+            Dollar Value: <input type="text" name="dollar" size="10" placeholder="Dollars Here"/>
+        </p>
+        <p>
+            <input onclick="showResult2()" type="submit" name="submit" value="Convert"/> &nbsp; &nbsp;
+            <input type="reset" name="reset" value="Clear"/>
+        </p>
+
+
+
+    </form>
+    <div>
+      <h2> One Euro Equals 1.09 Dollars.</h2>
+      <h2> For the First Problem, assume that the following hold</h2>
+    <p>
+      <ol>
+        <li> Assume that the user will always enter a value</li>
+        <li> Assume that the user will always enter the right value</li>
+        <li> Assume that the user will only enter Euro value</li>
+      </ol>
+    </p>
+
+    <h2> For the Second Problem, relax the 3rd assumption.</h2>
+
+    <h2> The third step, we will do this in two sub-steps.<br/>
+      We will relax the second assumption <br/>
+      Then we will relax the first assumption.
+    </h2>
+    </div>
+  </body>
+</html>
