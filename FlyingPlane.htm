@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Flying a Plane</title>
+
+	<style>
+
+    img#p {position: absolute; top: 20px; }
+    button {position: absolute; top: 300px;}
+	
+	</style>
+  <script type="text/javascript">
+    var pos = 20;
+    var planecontrol, flyflag;
+    flyflag = 0;
+    function flyplane()
+    {
+      const myplane = document.getElementById("p");
+      myplane.style.left = pos + "px";
+      pos = pos + 5;
+      if (pos > 1000)
+      {
+        pos = 20;
+      }
+
+      planecontrol = setTimeout("flyplane()", 25);
+      flyflag = 1;
+    }
+
+    function startstop()
+    {
+      if (flyflag == 1)
+      {
+        clearTimeout(planecontrol);
+        flyflag = 0;
+      }
+      else
+      {
+        planecontrol = setTimeout("flyplane()", 25);
+      }
+
+    }
+
+
+
+  </script>
+	
+	
+	
+  </head>
+
+  <body>
+    <img id="p" src="flying.jpg" alt="Flying Plane" title="Fly the Friendly Skys"/>
+
+    <button onclick="startstop()"> Click to Start </button>
+
+	
+  </body>
+</html>

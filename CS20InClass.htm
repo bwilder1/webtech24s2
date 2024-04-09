@@ -4,7 +4,7 @@
 
   <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
-	<title>Change this title</title>
+	<title>CS20 - Practice With Form Loops </title>
 
 	<style>
 	/* Your styles go here */
@@ -16,7 +16,6 @@
 	
 		function showData()
 		{
-			event.preventDefault();
 			const myf = document.getElementById("a");
 			var myborder, x;
 			myborder = 0;
@@ -35,7 +34,28 @@
 			else
 			{
 				myf.style.borderStyle = myborder;
+				event.preventDefault();
 			}
+
+			const mycheckbox = document.getElementsByName("animal");
+			var myanimallist = 0;
+			var myresult = document.getElementsByName("results")[0];
+			for (x=0; x < mycheckbox.length; ++x)
+			{
+				if (mycheckbox[x].checked)
+					{
+						if (myanimallist == 0)
+							{
+								myanimallist = mycheckbox[x].value;
+							}
+						else
+							{
+								myanimallist += ", " + mycheckbox[x].value;
+							}
+					}
+			}
+			myresult.value = myanimallist;
+			event.preventDefault();
 
 
 		}
