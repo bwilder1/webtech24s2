@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+  <meta name="description" content="A site map page designated to help users navigate webpage. Allows them to see all pizzerias along with information about Ben Wilder." />
+	<meta name="keywords" content="Site Map, Sources, Pizza, Pizzeria, Neapolitan, Slices, Reviews, Score, Dave Portnoy, Ben Wilder" />
+
+  <link rel="stylesheet" href="TopNavSS.css" type="text/css"/>
+
+	<title>Pizza Review Site Map</title>
+
+	<style>
+    h1, h3, h4, p {text-align: center;}
+    
+
+   /* p {text-align: center;}
+    h4 {color: red; text-decoration: underline;}
+    a {color: saddlebrown;} */
+    
+	
+	</style>
+	<script src ="https://code.jquery.com/jquery.min.js"></script>
+  <script type="text/JavaScript">
+
+function myFunction() {
+			var x = document.getElementById("mytopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+
+    $(function(){
+
+      $("p#p2").click( function(){
+
+      $("h1#h11").css({"font-family": "Georgia", "text-align": "center", "color": "rgb(204, 143, 29)", "font-size": "50px", "text-decoration": "underline"});
+      $("h3#h31").css({"font-family": "Georgia", "text-align": "center", "color": "red", "font-size": "33px"});
+      $("h4.h41").css({"font-family": "Georgia", "text-align": "center", "color": "Saddlebrown", "font-size": "25px"});
+      $("a.p1").css({"font-family": "Georgia", "text-align": "center", "color": "gold", "font-size": "20px"});
+      $("p#p2").hide();
+      $("div#layout").css({"background-color": "cornsilk", "padding-top": "10px", "padding-bottom": "20px"});
+      $("h3#h31").text("That's Better!");
+
+      });
+    });
+
+  </script>
+	
+	
+  </head>
+
+  <body>
+
+    <div id="banner">
+      <h1 id="heading"> Site Map </h1>
+    </div>
+    <div class="topnav" id="mytopnav">
+      <a href="index.htm">Home</a>
+      <a href="AboutMe.htm">About</a>
+      <div class="drpdwn">
+        <button class="drpbtn">Pepes Pizzeria</button>
+        <div class="drpdwncontent">
+          <a href="PepesAbout.htm">About</a>
+          <a href="PepesReview.htm">Review</a>
+        </div>
+      </div>
+      <div class="drpdwn">
+        <button class="drpbtn">Pinos Pizza</button>
+        <div class="drpdwncontent">
+          <a href="PinosAbout.htm">About</a>
+          <a href="PinosReview.htm">Review</a>
+        </div>
+      </div>
+      <div class="drpdwn">
+        <button class="drpbtn">Jinnys Pizzeria</button>
+        <div class="drpdwncontent">
+          <a href="JinnysAbout.htm">About</a>
+          <a href="JinnysReview.htm">Review</a>
+        </div>
+      </div>
+      <div class="drpdwn">
+        <button class="drpbtn">Oath Pizza</button>
+        <div class="drpdwncontent">
+          <a href="OathAbout.htm">About</a>
+          <a href="OathReview.htm">Review</a>
+        </div>
+      </div>
+      <a href="Contact.htm">Contact</a>
+      <a href="Credits.htm">Credits</a>
+		  <a href="SiteMap.htm" class="active">Site Map</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div id="layout">
+      <h1 id="h11">Site Map</h1>
+      <h3 id="h31">This is boring...</h3>
+      <p id="p2">Click me to Pizza-ify</p>
+      
+
+      <h4 class="h41">Ben Wilder</h4>
+      <h4 >
+        <a class="p1" href="index.htm" style="text-decoration: none;">Home</a>
+      </h4>
+      <h4>
+        <a class="p1" href="AboutMe.htm" style="text-decoration: none;">About</a>
+      </h4>
+     <h4 >
+      <a class="p1" href="Contact.htm" style="text-decoration: none;">Contact</a>
+    </h4>
+
+      <h4 class="h41">Reviews</h4>
+      <h4>
+      <a class="p1" href="JinnysReview.htm" style="text-decoration: none;"> Jinnys Review</a>
+    </h4>
+   <h4 >
+      <a class="p1" href="PinosReview.htm" style="text-decoration: none;"> Pinos Review</a>
+    </h4>
+      <h4>
+      <a class="p1" href="OathReview.htm" style="text-decoration: none;"> Oath Review</a>
+    </h4>
+    <h4>
+      <a class="p1" href="PepesReview.htm" style="text-decoration: none;"> Pepes Review</a>
+    </h4>
+
+      <h4 class="h41">Pizzerias</h4>
+      <h4>
+      <a class="p1" href="JinnysAbout.htm" style="text-decoration: none;"> Jinnys Pizzeria</a>
+    </h4>
+    <h4>
+      <a class="p1" href="PinosAbout.htm" style="text-decoration: none;"> Pinos Pizza</a>
+    </h4>
+    <h4>
+      <a class="p1" href="OathAbout.htm" style="text-decoration: none;"> Oath Pizza</a>
+    </h4>
+    <h4>
+      <a class="p1" href="PepesAbout.htm" style="text-decoration: none;"> Frank Pepes Pizzeria</a>
+    </h4>
+
+      <h4 class="h41">Sources</h4>
+      <h4>
+      <a class="p1" href="Credits.htm" style="text-decoration: none;">Credits Page</a>
+    </h4>
+
+  </div>
+
+	
+  </body>
+</html>
